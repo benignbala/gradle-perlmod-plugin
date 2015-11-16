@@ -1,0 +1,3 @@
+= Gradle Perl Mod Plugin
+
+This plugin allows you to create CPAN compatible modules using Module::Starter

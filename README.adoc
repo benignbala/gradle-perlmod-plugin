@@ -1,3 +1,30 @@
 = Gradle Perl Mod Plugin
 
 This plugin allows you to create CPAN compatible modules using Module::Starter
+
+== Usage
+
+[source,groovy]
+....
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.benignbala.gradle.perlmod:gradle-perlmod-plugin:0.1-alpha'
+    }
+}
+
+apply plugin: 'perlmod'
+
+perlmod {
+    moduleName 'Foo::Bar'
+    author 'Author Name'
+    email 'author@email.address'
+    builder 'Module::Build'
+}
+....
+
+                

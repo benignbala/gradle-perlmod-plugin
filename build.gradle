@@ -1,0 +1,16 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+group 'org.benignbala.gradle.perlmod'
+version '0.1-alpha'
+
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.10'
+    compile gradleApi()
+}
+
